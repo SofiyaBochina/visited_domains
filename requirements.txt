@@ -1,0 +1,8 @@
+requests
+datetime
+Django==3.2.16
+python-dotenv==0.19.2
+psycopg2-binary==2.8.6
+django-admin-rangefilter
+djangorestframework==3.14.0
+django-filter
