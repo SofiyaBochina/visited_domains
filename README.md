@@ -73,5 +73,5 @@ python manage.py runserver
 Эндпоинты:
 ```
 GET visited_links/
-POST visited_links/
+POST visited_domains/
 ```
