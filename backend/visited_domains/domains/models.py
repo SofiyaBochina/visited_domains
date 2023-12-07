@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 
 class Domain(models.Model):
@@ -10,7 +11,7 @@ class Domain(models.Model):
     )
     created = models.DateTimeField(
         'Created',
-        auto_now_add=True,
+        default=datetime.datetime.now(),
         blank=False,
         null=False
     )

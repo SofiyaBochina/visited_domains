@@ -4,19 +4,19 @@ from domains.models import Domain
 
 
 class UnixDateFilter(filters.FilterSet):
-    from_timestamp = filters.NumberFilter(
+    locals()["from"] = filters.NumberFilter(
         field_name='created',
         label='From unix timestamp',
         method='filter_from_ts')
 
-    to_timestamp = filters.NumberFilter(
+    to = filters.NumberFilter(
         field_name='created',
         label='To unix timestamp',
         method='filter_to_ts')
 
     class Meta:
         model = Domain
-        fields = ('from_timestamp', 'to_timestamp')
+        fields = ('from', 'to')
 
     def filter_from_ts(self, queryset, name, value):
         from_datetime = datetime.fromtimestamp(int(value))
