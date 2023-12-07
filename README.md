@@ -72,6 +72,6 @@ python manage.py runserver
 Проект станет доступен по адресу http://localhost:8000/.
 Эндпоинты:
 ```
-GET visited_links/
-POST visited_domains/
+GET visited_domains/
+POST visited_links/
 ```
